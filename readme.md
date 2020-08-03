@@ -3,7 +3,7 @@
 
 ### This extention automatically closes the YouTube mini player.
 
-__ Install:
+__Install:
 * Download all files to a folder.
 
 * Open chrome and type chrome://extensions in the adresbar.
@@ -14,7 +14,7 @@ __ Install:
   the files.
 
 
-__ How the code works:
+__How the code works:
 
 It's a pretty simple extension. The background script checks for updates on the youtube page. For example pressing the back button of the YouTube logo. When it detects an update, it sends a message to the content script.
 The content script checks if the miniplayer is enabled and automatically clicks the close button.
