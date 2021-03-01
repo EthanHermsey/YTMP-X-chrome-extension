@@ -16,6 +16,7 @@ __Install:__
 
 __How the code works:__
 
-It's a very simple extension. The background script checks for updates on the youtube page, for example pressing the back button or the YouTube logo.\
+It's a very simple extension. 
+- The background.js script checks for updates on the youtube page, for example pressing the back button or the YouTube logo.\
 When it detects an update, it sends a message to the content script.
-The content script checks if the miniplayer is enabled and visible and automatically clicks the close button.
+- The content.js script checks if the miniplayer is enabled and visible and automatically clicks the close button.
