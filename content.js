@@ -1,11 +1,16 @@
 
-chrome.runtime.onMessage.addListener( function () {
+chrome.runtime.onMessage.addListener( () => {
 
-	if ( document.querySelector( 'ytd-app' ).hasAttribute( 'miniplayer-active_' ) ) {
+	setTimeout( ()=>{
 
-		//when message is received and the mini player is active: click the close button.
-		document.getElementsByClassName( 'ytp-miniplayer-close-button ytp-button' )[ 0 ].click();
+		if ( ! document.querySelector( 'ytd-miniplayer' ).hasAttribute( 'closed' ) ||
+            document.querySelector( 'ytd-miniplayer' ).hasAttribute( 'active' ) ) {
 
-	}
+			const btn = document.querySelector( 'yt-icon-button.style-scope.ytd-miniplayer' );
+			btn.click();
+
+		}
+
+	}, 2000 );
 
 } );
