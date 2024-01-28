@@ -3,10 +3,10 @@
     "version": "1.0",
 	"description": "Automatically closes the YouTube mini player.",
 	"author": "Ethan Hermsey",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"background": {
-		"scripts":["background.js"]
-	  },
+		"service_worker": "background.js"
+	},
 	"content_scripts": [{
 		"js": ["content.js"],
 		"matches": ["https://www.youtube.com/*"]
